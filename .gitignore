@@ -1,0 +1,7 @@
+/target
+.env
+instructions.md
+.shuttle*
+Secrets*.toml
+points.md
+thoughts.md
