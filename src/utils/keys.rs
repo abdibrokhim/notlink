@@ -4,6 +4,7 @@ use std::sync::OnceLock;
 
 static PG_URL: OnceLock<String> = OnceLock::new();
 static CRYPTO_KEY: OnceLock<[u8; 32]> = OnceLock::new();
+static HOST: OnceLock<String> = OnceLock::new();
 
 pub fn init_secrets(secrets: &SecretStore) {
     // Initialize DATABASE_URL
@@ -24,6 +25,13 @@ pub fn init_secrets(secrets: &SecretStore) {
     key.copy_from_slice(&key_bytes);
     CRYPTO_KEY.set(key)
         .expect("CRYPTO_KEY already initialized");
+
+    // Initialize HOST
+    let host = secrets.get("HOST")
+        .expect("HOST not found in secrets");
+    HOST.set(host.clone())
+        .expect("HOST already initialized");
+
 }
 
 pub fn get_pg_url() -> &'static str {
@@ -32,4 +40,8 @@ pub fn get_pg_url() -> &'static str {
 
 pub fn get_crypto_key() -> &'static [u8; 32] {
     CRYPTO_KEY.get().expect("CRYPTO_KEY not initialized")
+}
+
+pub fn get_host() -> &'static str {
+    HOST.get().expect("HOST not initialized")
 }

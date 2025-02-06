@@ -46,6 +46,10 @@ curl -X POST -H "Content-Type: application/json" \
      -d '{"original_url":"https://x.com/search?q=%24TRUMP&src=trend_click&vertical=trends", "encrypt": true}' \
      http://localhost:8000/shorten
 
+curl -X POST -H "Content-Type: application/json" \
+     -d '{"original_url":"https://chatgpt.com/c/67a43d48-47d0-8003-b292-9419faaa2910", "encrypt": false}' \
+     http://localhost:8000/shorten
+
 
 [expire]
 

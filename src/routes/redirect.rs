@@ -3,6 +3,7 @@ use actix_web::{get, web, HttpResponse, http::header};
 use crate::db::operations::{find_by_short_code, mark_as_expired};
 use crate::Pool;
 use crate::utils::crypto::decrypt_url;
+use crate::utils::keys::get_host;
 
 #[get("/{short_code}")]
 pub async fn redirect_short(
@@ -18,39 +19,39 @@ pub async fn redirect_short(
     let result = find_by_short_code(&mut conn, &code);
     match result {
         Ok(record) => {
-            // If record.expired, redirect user to main page:
+            // If record is expired, redirect the user to the main page
             if record.expired {
                 return Ok(HttpResponse::Found()
-                    .append_header((header::LOCATION, "/"))
+                    .append_header((header::LOCATION, format!("https://{}/", get_host())))
                     .finish());
             }
-            // If user paid => check time since creation
+            // If the URL was paid for, check if more than 24 hours have passed.
             if record.transaction_hash.is_some() {
                 use chrono::Utc;
                 let now = Utc::now().naive_utc();
                 let hours_since_create = (now - record.created_at).num_hours();
 
                 if hours_since_create >= 24 {
-                    // 24 hours or more have passed => set expired + redirect to main page
+                    // Mark the record as expired and redirect to the main page.
                     mark_as_expired(&mut conn, record.id);
                     return Ok(HttpResponse::Found()
-                        .append_header((header::LOCATION, "/"))
+                        .append_header((header::LOCATION, format!("https://{}/", get_host())))
                         .finish());
                 }
             }
-            // If record is encrypted, we decrypt
+            // Decrypt the URL if needed.
             let target_url = if record.encrypted {
                 match decrypt_url(&record.original_url) {
                     Ok(decrypted) => decrypted,
                     Err(_) => {
-                        // If decrypt fails, you can decide how to respond
-                        return Ok(HttpResponse::BadRequest().body("Invalid encrypted data"));
+                        return Ok(HttpResponse::BadRequest()
+                            .body("Invalid encrypted data"));
                     }
                 }
             } else {
                 record.original_url
             };
-            // 301/302 redirect to the original_url
+            // Redirect (using a 302 Found) to the target URL.
             Ok(HttpResponse::Found()
                 .append_header((header::LOCATION, target_url))
                 .finish())
