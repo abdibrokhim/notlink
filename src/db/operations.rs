@@ -38,6 +38,8 @@ pub fn insert_short_url(
     }
     diesel::insert_into(short_urls)
         .values(&*new_short)
+        .on_conflict(original_url)
+        .do_nothing()
         .get_result::<ShortUrl>(conn)
 }
 
