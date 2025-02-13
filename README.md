@@ -80,7 +80,7 @@ cp .env.example .env
 ```
 
 Replace with your stuff:
-    
+
 ```shell
 DATABASE_URL=postgresql://...:...@.../...?sslmode=require
 CRYPTO_KEY=...
