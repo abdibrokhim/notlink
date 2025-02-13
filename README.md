@@ -102,6 +102,10 @@ Send request here: [http://localhost:8000](http://localhost:8000).
 You may try to run the tests with. But there's no tests yet, lol.
 Anyway refer to [APITESTS.md]() for examples of how to test the API endpoints.
 
+## Tutorial 🥳
+
+Tutorial is available on [Tutorial.md](https://github.com/abdibrokhim/notlink/blob/main/TUTORIAL.md). Check it out!!
+
 ## Future Plans
 
 i have no idea. but you can still donate and support project. look below.
