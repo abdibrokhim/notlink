@@ -10,7 +10,10 @@
     <img alt="language" src="https://img.shields.io/badge/language-Rust-black.svg">
   </a>
   <a href="https://yaps.gg">
-    <img alt="docs" src="https://img.shields.io/badge/docs-notl.ink-black">
+    <img alt="feedback" src="https://img.shields.io/badge/feedback-notl.ink-black">
+  </a>
+    <a href="https://notl.ink">
+    <img alt="github stars" src="https://img.shields.io/github/stars/abdibrokhim/notlink?style=social"/>
   </a>
 </p>
 <p align="center">
@@ -22,14 +25,6 @@
   </a>
   <a href="https://yaps.gg">
     <img alt="x(twitter) follow" src="https://img.shields.io/twitter/follow/abdibrokhim">
-  </a>
-</p>
-<p align="center">
-  <a href="./LICENSE">
-    <img alt="license" src="https://img.shields.io/github/license/abdibrokhim/notlink.svg">
-  </a>
-  <a href="https://notl.ink">
-    <img alt="github stars" src="https://img.shields.io/github/stars/abdibrokhim/notlink?style=social"/>
   </a>
 </p>
 <br>
@@ -60,6 +55,9 @@ try <a href="https://notl.ink">notl.ink</a>
 
 ## About The Project
 This is notlink - a blazingly fast URL shortener ever built with Rust programming language. It is designed to be simple, secure, and fast. notlink is open-source and free to use. It is also fully customizable and can be self-hosted on your own server. [Join us!!](https://discord.gg/nUdcd9p8Ae).
+
+[![live demo](/assets/notlink-yt.png)](https://youtu.be/ahZV6aAdnVI?si=N0O3RFYXE4Zz1Uhc)
+
 
 ## Built With
 notlink is built with the following awesome open-source technologies:
@@ -144,8 +142,8 @@ Anyway refer to [APITESTS.md](./APITESTS.md) for examples of how to test the API
 Tutorial is available on [TUTORIAL.md](https://github.com/abdibrokhim/notlink/blob/main/TUTORIAL.md). Check it out!!
 
 For the video tutorial, you can check it out on [YouTube](https://youtu.be/Mhz_eVH3XnQ?si=fX6GqIq79QGq6C69)
-<br>
-<br>
+
+[![live tutorial](/assets/notlink-ttrl.png)](https://youtu.be/Mhz_eVH3XnQ?si=ZhmY5BtrsblCrjaS)
 
 ## Donate & Support
 
