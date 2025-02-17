@@ -4,7 +4,7 @@
     <img width=200px height=200px src="https://raw.githubusercontent.com/abdibrokhim/notlink/refs/heads/main/assets/notlink-logo.png">
   </a>
 </p>
-<br>
+
 <p align="center">
   <a href="https://github.com/abdibrokhim/notlink/search?l=rust">
     <img alt="language" src="https://img.shields.io/badge/language-Rust-black.svg">
@@ -27,7 +27,6 @@
     <img alt="x(twitter) follow" src="https://img.shields.io/twitter/follow/abdibrokhim">
   </a>
 </p>
-<br>
 
 <h1 align="center">The Fastest URL Shortener Ever</h1>
 <div align="center">
@@ -48,10 +47,8 @@ try <a href="https://notl.ink">notl.ink</a>
   </p>
 
 <!-- <div align="center"><img src="" width="100%" ></div> -->
-<br>
 
 *<div align="center">⭐ If you find notlink interesting, consider starring this repo to help spread the word.</div>*
-<br>
 
 ## About The Project
 This is notlink - a blazingly fast URL shortener ever built with Rust programming language. It is designed to be simple, secure, and fast. notlink is open-source and free to use. It is also fully customizable and can be self-hosted on your own server. [Join us!!](https://discord.gg/nUdcd9p8Ae).
