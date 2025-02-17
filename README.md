@@ -1,34 +1,68 @@
-# notlink
-
-<div align="center">
-
-[![GitHub issues](https://img.shields.io/github/issues-raw/abdibrokhim/notlink.svg)](https://github.com/abdibrokhim/notlink/issues)
-[![License](https://img.shields.io/github/license/abdibrokhim/notlink.svg)](LICENSE)
-![GitHub stars](https://img.shields.io/github/stars/abdibrokhim/notlink?style=social)
-
-</div>
-
+<!-- markdownlint-disable -->
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="assets/notlink-logo.png"></a>
-
- <h3 align="center"><a href="">notlink</a></h3>
-  <p align="center">
-  this is notlink - a new kind of url shortener
-    <br />
-    <br />
-    <a href="https://discord.gg/nUdcd9p8Ae">Join Community</a>
-    ·
-    <a href="https://www.linkedin.com/in/abdibrokhim/">Documentation</a>
-  </p>
+    <img width=200px height=200px src="https://raw.githubusercontent.com/abdibrokhim/notlink/refs/heads/main/assets/notlink-logo.png">
+  </a>
 </p>
+<br>
+<p align="center">
+  <a href="https://github.com/abdibrokhim/notlink/search?l=rust">
+    <img alt="language" src="https://img.shields.io/badge/language-Rust-black.svg">
+  </a>
+  <a href="https://yaps.gg">
+    <img alt="docs" src="https://img.shields.io/badge/docs-notl.ink-black">
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/abdibrokhim/notlink/issues">
+    <img alt="crates" src="https://img.shields.io/github/issues-raw/abdibrokhim/notlink.svg">
+  </a>
+  <a href="https://discord.gg/nUdcd9p8Ae">
+    <img alt="discord" src="https://img.shields.io/discord/1325139842388070520?logo=discord"/>
+  </a>
+  <a href="https://yaps.gg">
+    <img alt="x(twitter) follow" src="https://img.shields.io/twitter/follow/abdibrokhim">
+  </a>
+</p>
+<p align="center">
+  <a href="./LICENSE">
+    <img alt="license" src="https://img.shields.io/github/license/abdibrokhim/notlink.svg">
+  </a>
+  <a href="https://notl.ink">
+    <img alt="github stars" src="https://img.shields.io/github/stars/abdibrokhim/notlink?style=social"/>
+  </a>
+</p>
+<br>
+
+<h1 align="center">The Fastest URL Shortener Ever</h1>
+<div align="center">
+it takes less than 1s to shorten a URL.<br>
+try <a href="https://notl.ink">notl.ink</a>
+</div>
+
+<h3 align="center">Super Simple. &nbsp; Blazingly Fast. &nbsp; Open Source.</h3>
+
+<p align="center">
+    <a href="https://www.linkedin.com/in/abdibrokhim/">Report Bug</a>
+    ·
+    <a href="https://www.linkedin.com/in/abdibrokhim/">Request a Feature</a>
+    ·
+  <a href="https://discord.gg/nUdcd9p8Ae">Join us on Discord</a>
+    ·
+    <a href="https://x.com/abdibrokhim">Follow us on X</a>
+  </p>
+
+<!-- <div align="center"><img src="" width="100%" ></div> -->
+<br>
+
+*<div align="center">⭐ If you find notlink interesting, consider starring this repo to help spread the word.</div>*
+<br>
 
 ## About The Project
-
-i'm building blazingly fast url shortener ever.
+This is notlink - a blazingly fast URL shortener ever built with Rust programming language. It is designed to be simple, secure, and fast. notlink is open-source and free to use. It is also fully customizable and can be self-hosted on your own server. [Join us!!](https://discord.gg/nUdcd9p8Ae).
 
 ## Built With
-
+notlink is built with the following awesome open-source technologies:
 - [Rust](https://www.rust-lang.org/)
 - [Actix](https://actix.rs/)
 - [Diesel](http://diesel.rs/)
@@ -36,6 +70,8 @@ i'm building blazingly fast url shortener ever.
 - [Neon](https://neon.tech/)
 - [NextJS](https://nextjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
+
+UI could be found in [this repo](https://github.com/abdibrokhim/notlink-ui)
 
 ## Features
 
@@ -59,7 +95,7 @@ Allow users to create custom shortened URLs.
 2. **QR Code Generation:**
 Automatically generate QR codes for each shortened URL.
 
-## Run Locally
+## Quick Start
 
 Clone the repository:
 
@@ -84,6 +120,7 @@ Replace with your stuff:
 ```shell
 DATABASE_URL=postgresql://...:...@.../...?sslmode=require
 CRYPTO_KEY=...
+HOST=...
 ```
 
 Generate a secure random key (you can use openssl command line):
@@ -100,15 +137,15 @@ cargo shuttle run
 
 Send request here: [http://localhost:8000](http://localhost:8000). 
 You may try to run the tests with. But there's no tests yet, lol.
-Anyway refer to [APITESTS.md]() for examples of how to test the API endpoints.
+Anyway refer to [APITESTS.md](./APITESTS.md) for examples of how to test the API endpoints.
 
 ## Tutorial 🥳
 
-Tutorial is available on [Tutorial.md](https://github.com/abdibrokhim/notlink/blob/main/TUTORIAL.md). Check it out!!
+Tutorial is available on [TUTORIAL.md](https://github.com/abdibrokhim/notlink/blob/main/TUTORIAL.md). Check it out!!
 
-## Future Plans
-
-i have no idea. but you can still donate and support project. look below.
+For the video tutorial, you can check it out on [YouTube](https://youtu.be/Mhz_eVH3XnQ?si=fX6GqIq79QGq6C69)
+<br>
+<br>
 
 ## Donate & Support
 
@@ -121,22 +158,35 @@ i have no idea. but you can still donate and support project. look below.
 - Ethereum: 0xb4a8e71d82e8Bf84a02C7770585F9cD8b267aDB9
 - Solana: 4MpPHapcdb5MwRy57juUQ2wUt1EJo8BYqXsYKwSfCvz1
 
-You can also find them here on [my official website](https://imcook.in) (scroll a little down)
+Wanna learn more about me? refer to [my official website](https://yaps.gg).
 
 ## Contributing
 
-You can just Contribute. Kindly check the [CONTRIBUTING.md](https://github.com/abdibrokhim/notlink/blob/main/CONTRIBUTING.md)
+Contributing is highly encouraged!
+Even if you are not planning to submit any code, joining our [Discord server](https://discord.gg/nUdcd9p8Ae) and providing feedback helps us a lot!
 
-## Community
+Check out our [CONTRIBUTING.md](./CONTRIBUTING.md) and find the appropriate repo above to contribute to.
 
-Join the community on [Discord](https://discord.gg/nUdcd9p8Ae)
+## Open Community
+
+Join the awesome community on [Discord](https://discord.gg/nUdcd9p8Ae)
+
+## Credits
+
+Logo made by Ibrohim Abdivokhidov (@abdibrokhim). Follow him on [LinkedIn](https://www.linkedin.com/in/abdibrokhim/) and/ or [X (twitter)](https://twitter.com/abdibrokhim)
 
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=abdibrokhim/notlink&type=Date)](https://star-history.com/#abdibrokhim/notlink&Date)
 
-Put a star ⭐️
+*⭐ If you find notlink interesting, consider starring this repo to help spread the word.*
 
-## Credits
+## Contributors ✨
 
-Logo made by Ibrohim Abdivokhidov (@abdibrokhim). Follow him on [LinkedIn](https://www.linkedin.com/in/abdibrokhim/) and/ or [X (twitter)](https://twitter.com/abdibrokhim)
+Thanks goes to these wonderful people:
+
+<a href="https://github.com/abdibrokhim/notlink/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=abdibrokhim/notlink" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
