@@ -38,9 +38,9 @@ try <a href="https://notl.ink">notl.ink</a>
 <h3 align="center">Super Simple. &nbsp; Blazingly Fast. &nbsp; Open Source.</h3>
 
 <p align="center">
-    <a href="https://www.linkedin.com/in/abdibrokhim/">Report Bug</a>
+    <a href="https://yaps.gg">Report Bug</a>
     ·
-    <a href="https://www.linkedin.com/in/abdibrokhim/">Request a Feature</a>
+    <a href="https://yaps.gg">Request a Feature</a>
     ·
   <a href="https://discord.gg/nUdcd9p8Ae">Join us on Discord</a>
     ·
@@ -69,7 +69,7 @@ notlink is built with the following awesome open-source technologies:
 - [NextJS](https://nextjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
 
-UI could be found in [this repo](https://github.com/abdibrokhim/notlink-ui)
+notlink's UI could be found in [this repo](https://github.com/abdibrokhim/notlink-ui)
 
 ## Features
 
