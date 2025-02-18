@@ -50,6 +50,10 @@ try <a href="https://notl.ink">notl.ink</a>
 
 *<div align="center">⭐ If you find notlink interesting, consider starring this repo to help spread the word.</div>*
 
+<h1 align="center">notlink is officially live on Product Hunt!</h1>
+
+[![live demo](/assets/ph-live.png)](https://cards.producthunt.com/cards/products/992403)
+
 ## About The Project
 This is notlink - a blazingly fast URL shortener ever built with Rust programming language. It is designed to be simple, secure, and fast. notlink is open-source and free to use. It is also fully customizable and can be self-hosted on your own server. [Join us!!](https://discord.gg/nUdcd9p8Ae).
 
